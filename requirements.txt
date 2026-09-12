@@ -1,0 +1,10 @@
+# QA-Tool-Vision-expansion 可选依赖（与主应用分开安装）
+# 完整能力（MediaPipe 骨架 + OpenCV 运动特征）
+opencv-contrib-python>=4.9,<5
+mediapipe>=1.0
+
+# 说明:
+# - 不要同时安装 opencv-python 与 opencv-contrib-python（两个发行版都提供 cv2）；
+# - 仅需 OpenCV 降级路径时，只装 opencv-contrib-python 即可；
+# - 姿态模型 pose_landmarker_lite.task（约 5.6MB）不随包分发，插件内按需下载并 SHA256 校验，
+#   默认存放 ~/.qa_tool_models/；离线环境可用 QA_TOOL_POSE_MODEL 指定模型文件。

@@ -1,0 +1,16 @@
+{
+  "id": "vision",
+  "name": "视频时间研究",
+  "version": "0.1.0",
+  "api_version": "2.0",
+  "entry": "qa_tool_vision.plugin:VisionPlugin",
+  "description": "摄像头/视频 → 动作识别（工作·空闲·走动·搬运·离岗）→ 作业周期 → 标准工时",
+  "category": "ie",
+  "icon": "🎥",
+  "requires": {"qa_tool": ">=3.8"},
+  "optional_deps": [
+    {"module": "cv2", "hint": "pip install \"qa-tool-vision-expansion[vision]\""},
+    {"module": "mediapipe", "hint": "pip install mediapipe>=1.0（缺失时降级 OpenCV 运动特征）"}
+  ],
+  "capabilities": ["tab", "agent_tools", "settings"]
+}
