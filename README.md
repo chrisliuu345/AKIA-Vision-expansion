@@ -1,5 +1,7 @@
 # QA-Tool Vision Expansion
 
+> 仓库: https://github.com/chrisliuu345/QA-Tool-Vision-expansion
+
 QA-Tool 的独立视觉插件项目：摄像头/视频 → 动作识别（工作·空闲·走动·搬运·离岗）
 → 作业周期 → 标准工时 / 工作抽样。
 
